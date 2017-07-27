@@ -1,0 +1,11 @@
+replicas: 1
+
+resources:
+  requests:
+    cpu: 200m
+
+ports: 
+  - name: plaintext
+    containerPort: 6697
+  - name: secure
+    containerPort: 7000
