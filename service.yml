@@ -1,5 +1,7 @@
 replicas: 1
 
+ingressMode: TCP
+
 resources:
   requests:
     cpu: 200m
@@ -7,7 +9,7 @@ resources:
 ports: 
   - name: plaintext
     containerPort: 6697
-    containerProto: TCP
+    protocol: TCP
   - name: secure
     containerPort: 7000
-    containerProto: TCP
+    protocol: TCP
