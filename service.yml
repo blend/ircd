@@ -7,5 +7,7 @@ resources:
 ports: 
   - name: plaintext
     containerPort: 6697
+    containerProto: TCP
   - name: secure
     containerPort: 7000
+    containerProto: TCP
